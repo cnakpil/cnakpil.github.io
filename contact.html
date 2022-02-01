@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Celine Nakpil - Contact</title>
+    <link rel="stylesheet" href="https://use.typekit.net/eoi7rfh.css">
+    <link rel="stylesheet" href="main.css" id="themeLink">
+    <script src="js/main.js" defer></script>
+    <script src="js/form.js" defer></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <script src="js/particles.js-master/particles.js" defer></script>
+    <script src="js/particles.js-master/app.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <a href="index.html" class="logo">
+        <img src="assets/catscremTemp.svg" alt="screaming cat logo">
+        <!-- All logo credit to https://jermmgirl.tumblr.com/post/157592588319/shop
+            Temp placeholder for my eventual logo-->
+      </a>
+      <nav>
+        <ul>
+          <li><span class="navLink"><a href="index.html">Home</a></span></li>
+          <li><span class="navLink"><a href="work.html">Work</a></span></li>
+          <li><span class="navLink"><a href="#">Contact</a></span></li>
+        </ul>
+        <div class="line"></div>
+      </nav>
+    </header>
+    <div class="formContainer">
+      <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/mwkykpek" method="post">
+        <fieldset id="fs-frm-inputs">
+          <label id="label1" for="full-name">Name</label>
+          <input type="text" name="name" id="full-name" required>
+          <label id="label2" for="email-address">Email</label>
+          <input type="text" name="_replyto" id="email-address" required>
+          <label id="label3" for="message">Message</label>
+          <textarea rows="4" name="message" id="message" style="overflow:auto" required></textarea>
+          <div class="g-recaptcha" data-sitekey="6Le6lY8dAAAAAL9gIhoEj1qgEziNYC6YZDP2QRdR"></div>
+          <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
+        </fieldset>
+        <input type="submit" value="Submit" class="swing">
+      </form>
+    </div>
+    <!-- animated background -->
+    <div id="particles-js"></div>
+  </body>
+</html>
